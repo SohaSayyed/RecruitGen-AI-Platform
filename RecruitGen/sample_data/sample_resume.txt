@@ -1,0 +1,31 @@
+Priya Sharma
+Machine Learning Engineer | priya.sharma@email.com | +91 98765 43210 | linkedin.com/in/priyasharma
+
+SUMMARY
+Machine Learning Engineer with 1.5 years of experience building and deploying deep learning models. Strong communication and teamwork skills; collaborated with cross-functional teams and presented results to stakeholders.
+
+SKILLS
+Python, TensorFlow, PyTorch, Keras, Scikit-learn, NLP, Computer Vision, Deep Learning, SQL, Pandas, NumPy, Data Visualization, Power BI, AWS (SageMaker, S3, EC2), Docker, Git
+
+EXPERIENCE
+Machine Learning Engineer - DataNova Analytics (Jan 2024 - Present)
+- Built an NLP resume-classification model with transformers, improving accuracy by 18%.
+- Deployed models on AWS SageMaker with Docker and CI/CD pipelines.
+- Analysed customer data with SQL and Pandas to build dashboards for business teams.
+
+ML Intern - VisionTech Labs (Jul 2023 - Dec 2023)
+- Trained CNN image classifiers in PyTorch for defect detection.
+
+PROJECTS
+1. Resume Screening System using Transformers and BERT embeddings
+2. Real-time Object Detection with YOLO and OpenCV
+3. Sales Forecasting Dashboard using time-series models and Power BI
+4. Chatbot using LLMs and Retrieval-Augmented Generation
+
+EDUCATION
+B.Tech in Computer Science and Engineering - ABC Institute of Technology (2019 - 2023), CGPA 8.6
+
+CERTIFICATIONS
+- AWS Certified Machine Learning - Specialty
+- TensorFlow Developer Certificate
+- Deep Learning Specialization - Coursera

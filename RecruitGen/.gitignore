@@ -1,0 +1,38 @@
+
+# Secrets
+.streamlit/secrets.toml
+.env
+.env.*
+
+# Python environments
+venv/
+venv311/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and generated files
+data/
+pdf_downloads/
+*.zip
+
+# Transformer large checkpoints
+models/transformer_v3/model.safetensors
+models/transformer_v3/outputs/
+
+# Training data
+models/*/data/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Ignore duplicate Transformer checkpoint
+RecruitGen_Models/models/transformer_v3/model.safetensors

@@ -1,0 +1,108 @@
+{
+  "model_name": "ResumeDiffusionEnhancer",
+  "architecture": {
+    "type": "ConditionalUNet",
+    "base": 32,
+    "mults": [
+      1,
+      2,
+      4
+    ],
+    "in_channels": 2
+  },
+  "schedule": {
+    "T": 1000,
+    "type": "cosine",
+    "prediction": "x0",
+    "loss": "L1, ink pixels weighted x5"
+  },
+  "sampling": {
+    "sampler": "DDIM (eta=0)",
+    "steps": 4,
+    "tile": 256,
+    "overlap": 32,
+    "batch": 16,
+    "blank_tile_steps": 1
+  },
+  "training": {
+    "dataset": "Kaggle Resume Dataset PDFs (first page, 150 dpi) + controlled degradations",
+    "train_pages": 240,
+    "val_pages": 24,
+    "steps": 1800,
+    "batch": 16,
+    "patch": 96,
+    "learning_rate": 0.0002,
+    "ema_decay": 0.999,
+    "seed": 42,
+    "device": "cpu",
+    "best_step": 1800,
+    "best_val_l1": 0.0257254671305418,
+    "seconds": 3508.9,
+    "trained_at": "2026-10-23T18:46:54",
+    "history": [
+      {
+        "step": 200,
+        "train_loss": 0.3536972438916564,
+        "val_l1": 0.05970598757266998,
+        "val_ink_l1": 0.21192434430122375,
+        "seconds": 312.2
+      },
+      {
+        "step": 400,
+        "train_loss": 0.1457852390035987,
+        "val_l1": 0.044307004660367966,
+        "val_ink_l1": 0.18417887389659882,
+        "seconds": 631.1
+      },
+      {
+        "step": 600,
+        "train_loss": 0.11699216470122337,
+        "val_l1": 0.03673426806926727,
+        "val_ink_l1": 0.1716281920671463,
+        "seconds": 963.2
+      },
+      {
+        "step": 800,
+        "train_loss": 0.10440409399569034,
+        "val_l1": 0.03281310573220253,
+        "val_ink_l1": 0.16438649594783783,
+        "seconds": 1306.4
+      },
+      {
+        "step": 1000,
+        "train_loss": 0.09643360173329711,
+        "val_l1": 0.030361289158463478,
+        "val_ink_l1": 0.15855370461940765,
+        "seconds": 1644.5
+      },
+      {
+        "step": 1200,
+        "train_loss": 0.09188422402366996,
+        "val_l1": 0.028615707531571388,
+        "val_ink_l1": 0.15356893837451935,
+        "seconds": 2072.2
+      },
+      {
+        "step": 1400,
+        "train_loss": 0.084787856079638,
+        "val_l1": 0.02725728414952755,
+        "val_ink_l1": 0.1495267152786255,
+        "seconds": 2557.7
+      },
+      {
+        "step": 1600,
+        "train_loss": 0.0809680150076747,
+        "val_l1": 0.02624862641096115,
+        "val_ink_l1": 0.14700329303741455,
+        "seconds": 3095.9
+      },
+      {
+        "step": 1800,
+        "train_loss": 0.08026258179917932,
+        "val_l1": 0.0257254671305418,
+        "val_ink_l1": 0.14485585689544678,
+        "seconds": 3508.8
+      }
+    ]
+  }
+}

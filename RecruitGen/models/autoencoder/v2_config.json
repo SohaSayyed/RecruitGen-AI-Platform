@@ -1,0 +1,88 @@
+{
+  "model": "Resume_Denoising_Autoencoder_v2",
+  "fine_tuned_from": [
+    "encoder.h5",
+    "decoder.h5"
+  ],
+  "data": "Kaggle Resume Dataset PDFs (first page, 150 dpi) + controlled degradations",
+  "loss": "L1, ink pixels weighted x5",
+  "steps": 600,
+  "batch": 8,
+  "patch": 128,
+  "learning_rate": 0.0002,
+  "seed": 42,
+  "v1_val_ink_l1": 0.19116894900798798,
+  "best_val_ink_l1": 0.0374663807451725,
+  "best_step": 600,
+  "seconds": 668.0,
+  "trained_at": "2026-10-24T18:32:07",
+  "history": [
+    {
+      "step": 100,
+      "train_loss": 0.07597263921052218,
+      "val_ink_l1": 0.05111902952194214,
+      "seconds": 162.6
+    },
+    {
+      "step": 200,
+      "train_loss": 0.05936150753870607,
+      "val_ink_l1": 0.045478712767362595,
+      "seconds": 280.7
+    },
+    {
+      "step": 300,
+      "train_loss": 0.053643995448946956,
+      "val_ink_l1": 0.04161474481225014,
+      "seconds": 378.5
+    },
+    {
+      "step": 400,
+      "train_loss": 0.05141570264473558,
+      "val_ink_l1": 0.039904024451971054,
+      "seconds": 476.4
+    },
+    {
+      "step": 500,
+      "train_loss": 0.0496330981887877,
+      "val_ink_l1": 0.0386546328663826,
+      "seconds": 571.2
+    },
+    {
+      "step": 600,
+      "train_loss": 0.04530489612370729,
+      "val_ink_l1": 0.0374663807451725,
+      "seconds": 667.9
+    }
+  ],
+  "use_by_default": true,
+  "evaluation": {
+    "test_pages": 24,
+    "mean_cer": {
+      "degraded (no enhancement)": 0.16139583735204957,
+      "Autoencoder": 0.267813929653949,
+      "Autoencoder v2": 0.14929420681943414
+    },
+    "v2_minus_v1": {
+      "mean_cer_difference": -0.11851972283451491,
+      "ci95": [
+        -0.1553519806632654,
+        -0.0829751125834336
+      ],
+      "pages_first_better": 20,
+      "pages_second_better": 3,
+      "pages": 24
+    },
+    "v2_minus_degraded": {
+      "mean_cer_difference": -0.012101630532615398,
+      "ci95": [
+        -0.04412652586198891,
+        0.020441584403933087
+      ],
+      "pages_first_better": 14,
+      "pages_second_better": 10,
+      "pages": 24
+    },
+    "use_by_default": true,
+    "evaluated_at": "2026-10-25T00:22:44"
+  }
+}

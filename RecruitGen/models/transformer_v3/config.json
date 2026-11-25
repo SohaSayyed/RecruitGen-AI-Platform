@@ -1,0 +1,26 @@
+{
+  "model_name": "RecruitGenTransformerV3",
+  "base_transformer": "distilbert-base-uncased",
+  "hidden_dim": 128,
+  "num_features": 9,
+  "num_roles": 5,
+  "max_length": 128,
+  "role_names": [
+    "AI/ML Engineer",
+    "Cloud Engineer",
+    "Data Analyst",
+    "General IT",
+    "Software Engineer"
+  ],
+  "feature_order": [
+    "experience_years",
+    "projects_count",
+    "programming_score",
+    "data_analytics_score",
+    "ml_ai_score",
+    "cloud_score",
+    "communication_score",
+    "certification_count",
+    "education_level"
+  ]
+}

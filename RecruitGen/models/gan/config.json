@@ -1,0 +1,289 @@
+{
+  "model_name": "RecruitGenConditionalWGANGP",
+  "feature_names": [
+    "experience_years",
+    "projects_count",
+    "programming_score",
+    "data_analytics_score",
+    "ml_ai_score",
+    "cloud_score",
+    "communication_score",
+    "certification_count",
+    "education_level"
+  ],
+  "role_names": [
+    "Accountant",
+    "Advocate",
+    "Agriculture",
+    "Apparel",
+    "Arts",
+    "Automobile",
+    "Aviation",
+    "BPO",
+    "Banking",
+    "Business Development",
+    "Chef",
+    "Construction",
+    "Consultant",
+    "Designer",
+    "Digital Media",
+    "Engineering",
+    "Finance",
+    "Fitness",
+    "HR",
+    "Healthcare",
+    "Information Technology",
+    "Public Relations",
+    "Sales",
+    "Teacher"
+  ],
+  "feature_bounds": {
+    "experience_years": [
+      0.0,
+      20.0
+    ],
+    "projects_count": [
+      0.0,
+      20.0
+    ],
+    "programming_score": [
+      0.0,
+      100.0
+    ],
+    "data_analytics_score": [
+      0.0,
+      100.0
+    ],
+    "ml_ai_score": [
+      0.0,
+      100.0
+    ],
+    "cloud_score": [
+      0.0,
+      100.0
+    ],
+    "communication_score": [
+      0.0,
+      100.0
+    ],
+    "certification_count": [
+      0.0,
+      15.0
+    ],
+    "education_level": [
+      1.0,
+      5.0
+    ]
+  },
+  "feature_support": {
+    "experience_years": [
+      0.0,
+      0.25,
+      0.75,
+      1.0,
+      1.25,
+      2.0,
+      3.0,
+      3.5,
+      4.0,
+      5.0,
+      5.5,
+      6.0,
+      6.5,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0,
+      16.0,
+      17.0,
+      18.0,
+      19.0,
+      20.0
+    ],
+    "projects_count": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      9.0,
+      10.0,
+      15.0,
+      18.0,
+      20.0
+    ],
+    "programming_score": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0,
+      75.0,
+      90.0,
+      100.0
+    ],
+    "data_analytics_score": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0,
+      75.0,
+      90.0,
+      100.0
+    ],
+    "ml_ai_score": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0,
+      75.0,
+      90.0
+    ],
+    "cloud_score": [
+      0.0,
+      15.0,
+      30.0,
+      45.0,
+      60.0,
+      75.0,
+      90.0,
+      100.0
+    ],
+    "communication_score": [
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0
+    ],
+    "certification_count": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0,
+      13.0,
+      14.0,
+      15.0
+    ],
+    "education_level": [
+      1.0,
+      2.0,
+      3.0,
+      5.0
+    ]
+  },
+  "integer_features": [
+    "projects_count",
+    "certification_count",
+    "education_level"
+  ],
+  "noise_dim": 32,
+  "hidden_dim": 128,
+  "training": {
+    "dataset": "Kaggle Resume Dataset (snehaanbhawal/resume-dataset)",
+    "dataset_url": "https://www.kaggle.com/datasets/snehaanbhawal/resume-dataset",
+    "train_rows": 1736,
+    "train_role_counts": {
+      "Accountant": 82,
+      "Advocate": 82,
+      "Agriculture": 44,
+      "Apparel": 68,
+      "Arts": 72,
+      "Automobile": 25,
+      "Aviation": 82,
+      "BPO": 16,
+      "Banking": 81,
+      "Business Development": 83,
+      "Chef": 82,
+      "Construction": 78,
+      "Consultant": 81,
+      "Designer": 75,
+      "Digital Media": 67,
+      "Engineering": 82,
+      "Finance": 82,
+      "Fitness": 81,
+      "HR": 77,
+      "Healthcare": 81,
+      "Information Technology": 84,
+      "Public Relations": 77,
+      "Sales": 82,
+      "Teacher": 72
+    },
+    "dataset_report": {
+      "raw_rows": 2484,
+      "raw_categories": 24,
+      "dropped_too_short": 1,
+      "dropped_duplicate_text": 2,
+      "clipped_values": {
+        "experience_years": 48,
+        "projects_count": 50,
+        "certification_count": 120
+      },
+      "rows": 2481,
+      "role_counts": {
+        "Accountant": 118,
+        "Advocate": 118,
+        "Agriculture": 63,
+        "Apparel": 97,
+        "Arts": 103,
+        "Automobile": 36,
+        "Aviation": 116,
+        "BPO": 22,
+        "Banking": 115,
+        "Business Development": 119,
+        "Chef": 118,
+        "Construction": 112,
+        "Consultant": 115,
+        "Designer": 107,
+        "Digital Media": 96,
+        "Engineering": 118,
+        "Finance": 117,
+        "Fitness": 117,
+        "HR": 110,
+        "Healthcare": 115,
+        "Information Technology": 120,
+        "Public Relations": 111,
+        "Sales": 116,
+        "Teacher": 102
+      },
+      "source_file": "Resume.csv",
+      "split_sizes": {
+        "train": 1736,
+        "test": 373,
+        "val": 372
+      }
+    },
+    "iterations": 6000,
+    "batch_size": 64,
+    "n_critic": 5,
+    "gp_weight": 10.0,
+    "learning_rate": 0.0002,
+    "seed": 42,
+    "selection": "lowest validation Wasserstein distance",
+    "best_iteration": 4300,
+    "best_val_distance": 0.026941407805655113,
+    "seconds": 122.7,
+    "trained_at": "2026-10-23T16:20:38"
+  }
+}
